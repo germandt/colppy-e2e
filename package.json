@@ -1,0 +1,22 @@
+{
+  "name": "test-colppy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:clientes": "playwright test tests/clientes.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "setup": "playwright test tests/auth.setup.ts",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "dotenv": "^17.4.2"
+  }
+}
